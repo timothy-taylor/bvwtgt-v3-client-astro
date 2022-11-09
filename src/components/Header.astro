@@ -1,0 +1,11 @@
+---
+export interface Props {
+  mainText: string;
+  secondaryText: string;
+}
+
+const { mainText, secondaryText } = Astro.props;
+---
+
+<h2 class="pt-8">{mainText}</h2>
+<h3 class="max-w-md">{secondaryText}</h3>
