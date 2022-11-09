@@ -3,7 +3,7 @@ import { supabase } from "../lib/supabase-client";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 
-const { data: posts } = await supabase
+let { data: posts } = await supabase
   .from("posts")
   .select("id, title")
   .order("id", { ascending: false });
@@ -17,7 +17,7 @@ const { data: posts } = await supabase
   <h4 class="pt-8 pb-2">Posts:</h4>
   <ul class="list-none m-0">
     {
-      posts!.map((e: { id: string; title: string }) => (
+      (posts! ?? []).map((e: { id: string; title: string }) => (
         <li class="p-0 -indent-4 pl-4 pb-3 max-w-sm">
           <a href={`/posts/${e.id}`} class="block text-lg">
             {e.title}
