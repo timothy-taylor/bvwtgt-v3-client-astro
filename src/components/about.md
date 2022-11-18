@@ -1,6 +1,6 @@
 I'm a software developer using modern web
-technologies (with experience with Ruby and Rails and while 
-generally enjoying Lua and Rust). I care about accessibility, good UX, and
+technologies (with experience with Ruby and Rails while 
+enjoying Lua and Rust). I care about accessibility, good UX, and
 responsive designs -- just generally humane technology.
 
 I'm a generalist, musician, and a team player who enjoys
