@@ -19,7 +19,7 @@ let { data: posts } = await supabase
     {
       (posts! ?? []).map((e: { id: string; title: string }) => (
         <li class="p-0 -indent-4 pl-4 pb-3 max-w-sm">
-          <a href={`/posts/${e.id}`} class="block text-lg">
+          <a href={`/posts/${e.id}`} class="block text-lg dark:text-[#D5D9DA]">
             {e.title}
           </a>
         </li>

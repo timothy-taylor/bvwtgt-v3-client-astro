@@ -37,7 +37,7 @@
     }
 
     a {
-        @apply font-light italic hover:underline
+        @apply font-light hover:underline
     }
 
     p {
@@ -46,10 +46,6 @@
 
     ul, ol {
         @apply list-disc ml-4 list-inside;
-    }
-
-    li {
-        @apply p-1;
     }
 
     pre {
