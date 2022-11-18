@@ -19,7 +19,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Nav activePath={Astro.url.pathname} client:load />
+    <Nav client:load />
     <slot />
     <footer class="fixed right-4 bottom-1 opacity-30 font-thin text-sm">
       TGT 2022

@@ -1,10 +1,15 @@
 <script> 
-  export let activePath;
+  import { onMount } from "svelte";
 
   const links = [
     { text: "Writing", path: "/" },
     { text: "About", path: "/about" },
   ];
+
+  let activePath;
+  onMount(() => {
+    activePath = window.location.pathname;
+  })
 </script>
 
 <nav class="absolute top-4 right-4 md:right-20 md:border-r">
