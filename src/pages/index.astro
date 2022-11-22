@@ -14,12 +14,12 @@ let { data: posts } = await supabase
     mainText="Hi and welcome."
     secondaryText="This site houses writings and projects of Tim Taylor as he explores technology, sound, process, and design."
   />
-  <h4 class="pt-8 pb-2">Posts:</h4>
+  <h4 class="pt-8 pb-2 dark:text-neutral">Posts:</h4>
   <ul class="list-none m-0">
     {
       (posts! ?? []).map((e: { id: string; title: string }) => (
-        <li class="p-0 -indent-4 pl-4 pb-3 max-w-sm">
-          <a href={`/posts/${e.id}`} class="block text-lg dark:text-[#D5D9DA]">
+        <li class="p-0 -indent-4 pl-4 pb-3 dark:text-accent">
+          <a href={`/posts/${e.id}`} class="block text-lg">
             {e.title}
           </a>
         </li>
