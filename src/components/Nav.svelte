@@ -12,7 +12,7 @@
   })
 </script>
 
-<nav class="z-50 absolute top-4 right-4 md:right-20 border-pop md:border-r">
+<nav class="z-50 absolute top-4 right-4 md:right-20 dark:border-pop md:border-r">
   <ul class="list-none m-0 flex flex-col">
     {#each links as link}
          <li class="inline p-0">
