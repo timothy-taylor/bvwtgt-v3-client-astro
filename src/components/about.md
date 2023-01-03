@@ -1,7 +1,8 @@
 I'm a software developer using modern web
-technologies (with experience with Ruby and Rails while 
-enjoying Lua and Rust). I care about accessibility, good UX, and
-responsive designs -- just generally humane technology.
+technologies (while enjoying and exploring Lua and Rust). 
+I care about accessibility, good UX, and
+responsive designs -- just generally working on humane technology.
+I'm currently working as a frontend developer for Seattle Kraken Hockey Operations.
 
 I'm a generalist, musician, and a team player who enjoys
 improvisation, learning, and uncovering hidden assumptions and
@@ -13,8 +14,8 @@ something that is both simple and easily discoverable yet rewards deeper
 interaction and study. In my free time I enjoy coding musical controllers
 and interfaces for both the browser and various hardware devices.
 
-Currently working on synthesis / sound / instrument design, chess, skateboarding, 
-electric guitar explorations, carving out space and energy to live and have a sustainable 
+Currently working on synthesis / sound / instrument design, chess, skateboarding,
+electric guitar explorations, carving out space and energy to live and have a sustainable
 career as an agoraphobic, and balancing free improvisation with intentionality.
 
 Explore:
