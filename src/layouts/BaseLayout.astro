@@ -1,28 +1,38 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Nav from "../components/Nav.svelte";
 import "../styles/global.css";
 
 export interface Props {
-  title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
-  <body>
-    <Nav client:load />
-    <slot />
-    <footer class="fixed right-4 bottom-1 font-thin text-sm dark:text-neutral">
-      TGT 2022
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <meta name="generator" content={Astro.generator} />
+
+        <ViewTransitions />
+
+        <title>{title}</title>
+    </head>
+    <body
+        class="max-w-screen-sm bg-light px-4 pt-12 pb-8 dark:bg-dark dark:text-light"
+    >
+        <Nav client:load />
+
+        <slot />
+
+        <footer
+            class="fixed right-4 bottom-1 text-sm font-thin dark:text-neutral"
+        >
+            TGT 2022
+        </footer>
+    </body>
 </html>

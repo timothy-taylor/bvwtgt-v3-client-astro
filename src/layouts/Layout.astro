@@ -1,16 +1,17 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import hero from "../lib/images/hero.svg";
 
 export interface Props {
-  title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-  <img class="z-0 rotate-2" width="100%" src="/hero.svg" alt="" />
-  <main>
-    <slot />
-  </main>
+    <img class="z-0 rotate-2" width="100%" src={hero.src} alt="" />
+    <main>
+        <slot />
+    </main>
 </BaseLayout>

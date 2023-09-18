@@ -2,14 +2,16 @@
 import BaseLayout from "./BaseLayout.astro";
 
 export interface Props {
-  title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-  <main class="absolute left-0 flex flex-col lg:flex-row items-center">
-    <slot />
-  </main>
+    <main
+        class="absolute left-0 flex flex-col lg:flex-row items-center justify-center"
+    >
+        <slot />
+    </main>
 </BaseLayout>

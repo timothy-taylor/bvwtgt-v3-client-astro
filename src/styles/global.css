@@ -3,29 +3,27 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: optional;
-    src: url("/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+    src: url("/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf")
+        format("truetype");
 }
 
 @font-face {
-  font-family: "OpenSans";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url("/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-family: "OpenSans";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url("/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+        format("truetype");
 }
 
 @tailwind base;
 @layer base {
-    body {
-        @apply max-w-screen-sm mx-auto pt-12 pb-8 px-4 md:px-0 bg-light dark:bg-dark dark:text-light;
-    }
-
     h1 {
         @apply text-4xl;
     }
 
     h2 {
-        @apply text-3xl;
+        @apply text-3xl text-pop;
     }
 
     h3 {
@@ -37,19 +35,20 @@
     }
 
     a {
-        @apply underline underline-offset-2 font-light hover:no-underline
+        @apply font-light underline underline-offset-2 hover:no-underline;
     }
 
     p {
         @apply py-2 leading-relaxed;
     }
 
-    ul, ol {
-        @apply list-disc ml-4 list-inside;
+    ul,
+    ol {
+        @apply ml-4 list-inside list-disc;
     }
 
     pre {
-        @apply p-8 my-4 w-full overflow-auto border;
+        @apply my-4 w-full overflow-auto border p-8;
     }
 }
 @tailwind components;

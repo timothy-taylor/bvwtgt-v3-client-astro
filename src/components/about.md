@@ -1,5 +1,5 @@
 I'm a software developer using modern web
-technologies (while enjoying and exploring Lua and Rust). 
+technologies (while enjoying and exploring Lua and Rust).
 I care about accessibility, good UX, and
 responsive designs -- just generally working on humane technology.
 I'm currently working as a frontend developer for Seattle Kraken Hockey Operations.
@@ -20,7 +20,7 @@ career as an agoraphobic, and balancing free improvisation with intentionality.
 
 Explore:
 
-- [LinkedIn](https://www.linkedin.com/in/timothy-g-taylor)
-- [Github](https://github.com/timothy-taylor)
-- [Bandcamp](https://tgtmusic.bandcamp.com/)
-- [Spotify](https://open.spotify.com/artist/5pJDAJfpQWFQJVOB16Gx70?si=XUQiPH22QduDUyMmuIjV6g)
+-   [LinkedIn](https://www.linkedin.com/in/timothy-g-taylor)
+-   [Github](https://github.com/timothy-taylor)
+-   [Bandcamp](https://tgtmusic.bandcamp.com/)
+-   [Spotify](https://open.spotify.com/artist/5pJDAJfpQWFQJVOB16Gx70?si=XUQiPH22QduDUyMmuIjV6g)

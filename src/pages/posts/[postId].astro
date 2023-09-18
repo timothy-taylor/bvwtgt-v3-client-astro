@@ -4,41 +4,39 @@ import { supabase } from "../../lib/supabase-client";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths({}) {
-  const { data: posts } = await supabase
-    .from("posts")
-    .select("*")
-    .order("id", { ascending: false });
+    const { data: posts } = await supabase
+        .from("posts")
+        .select("*")
+        .order("id", { ascending: false });
 
-  return posts!.map(
-    (post: {
-      id: number;
-      title: string;
-      content: string;
-      tag_id: number;
-      created_at: string;
-      updated_at: string;
-    }) => ({
-      params: { postId: post.id.toString() },
-      props: { post },
-    })
-  );
+    return posts!.map(
+        (post: {
+            id: number;
+            title: string;
+            content: string;
+            tag_id: number;
+            created_at: string;
+            updated_at: string;
+        }) => ({
+            params: { postId: post.id.toString() },
+            props: { post },
+        }),
+    );
 }
 
 const { post } = Astro.props,
-  title = post.title,
-  content = marked.parse(post.content),
-  date = post.created_at;
+    title = post.title,
+    content = marked.parse(post.content),
+    date = post.created_at;
 ---
 
 <Layout title={title}>
-  <div class="min-h-screen">
-    <article class="pb-12">
-      <h2 class="max-w-sm font-bold">{title}</h2>
-      <div class="text-sm italic">{date}</div>
-      <div class="py-6" set:html={content}></div>
-    </article>
-    <div class="text-center">
-      <a href="/" class="lowercase font-thin italic">Back</a>
+    <div class="min-h-screen">
+        <article class="pb-12">
+            <h2 class="max-w-sm font-bold">{title}</h2>
+            <div class="text-sm italic">{date}</div>
+            <div class="py-6" set:html={content} />
+        </article>
+        <a href="/" class="font-thin lowercase italic">Back</a>
     </div>
-  </div>
 </Layout>
